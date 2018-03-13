@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Switch</title>
+
+    <style>
+      body
+      {
+
+      background-image:url(img/one.jpg);
+
+
+      }
+
+    .switch
+    {
+
+   height:100px;
+   width:300px;
+   background-image:url(img/farm.jpg);
+   color:white;
+   border:groove 4px grey;
+   margin-left:540px;
+   margin-top:240px;
+   margin-bottom: 20px;
+
+   
+
+    }
+
+     h2
+    {
+
+    height: 70px;
+    width:70px;
+    background-color: red;
+    color:white;
+    position:relative;
+    left: 0;
+    bottom:20px;
+    transition: all 2.5s;
+    text-align: center;
+    padding-top: 30px;
+    font-family: italic;
+
+
+
+    }
+
+    .ON
+    {
+
+    left: 232px;
+    background-color:blue;
+
+    }
+
+    #collection
+    {
+
+   margin-left:200px;
+   margin-right:200px;
+   height: 50%;
+   width:50%;
+
+   
+
+
+    }
+
+    h1
+    {
+
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color:darkred;
+     text-align: center;
+     
+
+
+    }
+    
+    
+    
+    </style>
+    <h1>GAMES WORLD</h1>
+
+
+ <!-- jQuery - attach script library -->
+ <script src="js/jquery-2.1.3.min.js"></script>
+ <script>
+ 
+ $(document).ready(function(){
+         
+            $(".switch").click(function(event){
+                $("h2").toggleClass("ON");
+            });
+        });
+ 
+ 
+ </script>
+
+
+
+    </head>
+
+    <body>
+
+  <div class="switch">
+    
+    <h2>Play Now</h2>
+
+  </div>
+  <div id="collection">
+      <img src="img/two.png">
+    </div>
+    </body>
+
+</html>
